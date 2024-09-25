@@ -1,0 +1,17 @@
+﻿@model AssignRole
+
+<h2>Assign Role to User</h2>
+
+<form asp-action="AddUserRole" method="post">
+    <div class="form-group">
+        <label asp-for="userId"></label>
+        <input asp-for="userId" class="form-control" />
+        <span asp-validation-for="userId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="roleId"></label>
+        <input asp-for="roleId" class="form-control" />
+        <span asp-validation-for="roleId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Assign Role</button>
+</form>
